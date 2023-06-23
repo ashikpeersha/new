@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'cursive'; 
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    background: #dde1e4;
+}
+
+.social-menu{
+    position:relative;
+    display:flex;
+}
+
+.social-icon{
+    position:relative;
+}
+
+.social-icon a{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background: #fff;
+    border-radius: 50%;
+    text-align:center;
+    margin:0 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    transform:translateY(0)scale(1);
+    transition:.3s;
+}
+
+.social-icon:hover a{
+    transform:translateY(-6px)scale(1.2);
+    margin:0 20px;
+}
+
+.social-icon:nth-child(1):hover a {
+  background:linear-gradient(to right,rgb(5, 5, 207),rgb(70, 241, 70))
+}
+
+.social-icon a i {
+    font-size: 18px;
+    color:#000;
+    line-height:40px;
+    transition:.3s;
+}
+
+.social-icon:hover a i {
+    color:#fff;
+}
+
+.social-icon span{
+    
+    position:absolute;
+    left:50px;
+    top:50px;
+    transform: translate(-50%,-50%) scale(0);
+    font-size:16px;
+    z-index:-1;
+    transition:.3s;
+}
+
+.social-icon:hover span{
+    transform: translate(-50%, 90%) scale(1);
+}
+
+.social-icon:nth-child(1):hover span {
+   color: #1da1f2;
+}
+.social-icon:nth-child(2):hover span {
+    color: #3b5998;
+}
+.social-icon:nth-child(3):hover span{
+    color: #c32aa3;
+}
+.social-icon:nth-child(4):hover span{
+    color: #211f1f;
+}
+.social-icon:nth-child(5):hover span{
+    color: #ff0000;
+}
